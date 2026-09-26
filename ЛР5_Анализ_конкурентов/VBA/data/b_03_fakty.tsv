@@ -1,0 +1,30 @@
+SHEET	03_	A4
+F001	C01		Главная	https://plantuml.com	Первый экран	«No server. No tokens. No tracking»	ценностное предложение	5	2026-09-17	цитата; Рисунки/scr_05	Ценность — приватность и локальная работа
+F002	C01		Лицензия	https://plantuml.com	Загрузка	GPL-3.0, open source	потоки доходов	4	2026-09-17	kursach.md	Прямой выручки от товара нет
+F003	C01		Интеграции	https://plantuml.com	IDE/CI	Плагины IntelliJ, VS Code; расширение для GitHub	каналы	4	2026-09-17	архив ЛР5	Канал — экосистема IDE
+F004	C01		SimilarWeb	https://www.similarweb.com/website/plantuml.com/	Трафик	≈507 тыс. визитов; РФ 9,07 %	целевые сегменты	4	2026-09-17	Рисунки/scr_06	Русскоязычная аудитория
+F005	C01		Тарифы	https://plantuml.com	—	Страницы тарифов нет (отрицательный признак)	потоки доходов	3	2026-09-17	—	Модель не коммерческая
+F006	C02		Тарифы	🔲 URL тарифов Eraser	Тарифная сетка	Free/Starter 15–20/Business 45–60 USD/Enterprise по запросу; лимиты AI 3/40/250/∞	потоки доходов	5	2026-09-17	Рисунки/scr_10	Подписка по местам с лимитом AI
+F007	C02		Тарифы	🔲 URL тарифов Eraser	Enterprise	SSO, usage reporting на старших тарифах	отношения с клиентами	4	2026-09-17	архив ЛР5	Переход к корпоративным продажам
+F008	C02		Продукт	https://www.eraser.io/product/ai-diagrams	AI	AI-генерация, MCP-сервер для агентов, git-синхронизация	цифровой товар	5	2026-09-17	00-competitive-analysis.md	Ядро — AI + DSL
+F009	C02		Интеграции	https://www.eraser.io	Интеграции	GitHub, Notion, Confluence, VS Code	ключевые партнеры	4	2026-09-17	архив ЛР5	Платформенные партнёрства
+F010	C02		SimilarWeb	https://www.similarweb.com/website/eraser.io/	Трафик	678,5 тыс. визитов; прямые заходы 49,05 %	каналы	4	2026-09-23	Рисунки/scr_12	PLG + бренд
+F011	C03		Главная	https://mermaid.js.org	Интеграции	Нативный рендер в GitHub/GitLab/Notion	данные и сетевые эффекты	5	2026-09-17	Рисунки/scr_07	Стандарт де-факто — сетевой эффект платформ
+F012	C03		Команда	🔲 URL Meet the Team	Спонсоры	Кнопки GitHub Sponsors	потоки доходов	4	2026-09-17	архив ЛР5	Донаты
+F013	C03		Лицензия	https://mermaid.js.org	—	MIT	ключевые ресурсы	4	2026-09-17	kursach.md	Открытый код — ресурс сообщества
+F014	C03		Коммерческий слой	https://www.mermaidchart.com	Тарифы	Прайсинг Mermaid Chart скрыт без регистрации	потоки доходов	2	2026-09-17	архив ЛР5	Монетизация через отдельный SaaS
+F015	C04		Главная	https://d2lang.com	Первый экран	«A modern language that turns text to diagrams»	ценностное предложение	5	2026-09-23	Рисунки/scr_13	Ценность — скорость
+F016	C04		FAQ	https://d2lang.com/tour/faq/	Финансирование	Fiscal sponsor Hack Club, не венчурный	структура затрат	4	2026-09-23	архив ЛР5	Низкие затраты, донаты
+F017	C04		Документация	https://d2lang.com/tour/faq/	Экспорт	SVG/PNG/PDF/PPTX/GIF/ASCII; 3 движка раскладки	ключевые ресурсы	4	2026-09-23	архив ЛР5	Технология раскладки
+F018	C04		Каналы	https://d2lang.com	Сообщество	Homebrew/Winget, GitHub, Discord, playground	каналы	4	2026-09-23	архив ЛР5	Open-source дистрибуция
+F019	C05		Главная	https://www.gleek.io	Продукт	Собственный DSL, UML-подобные, ER, flowchart	цифровой товар	3	🔲 дата просмотра	kursach.md	🔲 проверить
+F020	C05		Тарифы	🔲 URL тарифов Gleek	Тарифы	Freemium, есть Free (цены 🔲)	потоки доходов	2	🔲 дата просмотра	kursach.md	🔲 проверить цены
+F021	C07		Главная	https://www.drawio.com	Первый экран	«Professional diagramming without the enterprise price tag or privacy compromises»	ценностное предложение	5	2026-09-23	Рисунки/scr_18	Ценность — бесплатно и приватно
+F022	C07		Главная	https://www.drawio.com	Доступ	«No account required. No credit card»	каналы	5	2026-09-23	Рисунки/scr_18	Нулевой барьер входа
+F023	C07		О компании	https://www.drawio.com	Модель	«No artificial scarcity, no Enterprise tier for SSO»; «Not VC-funded»	потоки доходов	4	2026-09-23	архив ЛР5	Нет платного тарифа редактора
+F024	C07		Интеграции	https://www.drawio.com	Интеграции	Google, Microsoft, Atlassian, GitHub, VS Code, Notion; плагины Atlassian Marketplace	ключевые партнеры	5	2026-09-23	архив ЛР5	Интеграции — канал и партнёрства (платность плагинов 🔲)
+F025	C07		О компании	https://www.drawio.com	Масштаб	«100M+ users worldwide», история с 2005 г.	масштабирование	3	2026-09-23	архив ЛР5	Заявление компании, не проверено
+F026	C08		Продукт	🔲 URL Ramus	Нотации	IDEF0/IDEF1X/IDEF3, курсы СНГ, устаревший UX	цифровой товар	3	2026-09-17	00-competitive-analysis.md	Нишевой учебный товар
+F027	C08		Лицензия	🔲 URL Ramus	Лицензия	Настольное приложение, платная лицензия, без текста и Git	потоки доходов	3	2026-09-17	01-project-concept.md	Лицензионная модель
+F028	C09		Продукт	https://www.lucidchart.com	Функции	Совместная работа — сильная сторона; AI-генерация по описанию	цифровой товар	3	2026-09-17	00-competitive-analysis.md	Ценность — команда
+F029	C09		Тарифы	🔲 URL тарифов Lucidchart	Тарифы	SaaS-подписка (цены 🔲)	потоки доходов	2	2026-09-17	архив ЛР5	🔲 проверить

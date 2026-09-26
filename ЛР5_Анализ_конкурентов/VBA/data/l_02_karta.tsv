@@ -1,0 +1,35 @@
+SHEET	02_	A7
+C01	Главная	https://plantuml.com	Главная страница	Обещание, аудитория	Главное обещание, CTA	2026-09-17	Рисунки/scr_05_plantuml_main.png	5	«No server. No tokens. No tracking»
+C01	Онлайн-сервер	🔲 URL онлайн-сервера PlantUML	Функции	Путь до первого результата	Шаги до диаграммы	🔲 дата просмотра	🔲 Рисунки/scr_24_plantuml_server.png	3	Результат без регистрации
+C01	Документация языка	🔲 URL раздела UML в документации	Документация	База знаний	Полнота описания синтаксиса	🔲 дата просмотра	🔲 Рисунки/scr_25_plantuml_docs.png	4	Обширная документация
+C02	Главная	https://www.eraser.io	Главная страница	Обещание	Позиционирование AI	2026-09-17	Рисунки/scr_11_eraser_ai.png	5	AI for diagrams
+C02	DiagramGPT	https://www.eraser.io/diagramgpt	Лендинг товара	AI-функция	Сценарий генерации	2026-09-17	Рисунки/scr_11_eraser_ai.png	5	Генерация по тексту
+C02	AI diagrams	https://www.eraser.io/product/ai-diagrams	Функции	Функции	MCP, git-синхронизация	2026-09-17	Рисунки/scr_11_eraser_ai.png	4	Интеграции для агентов
+C02	Тарифы	🔲 URL страницы тарифов Eraser	Тарифы	Цена	Пакеты, лимиты AI	2026-09-17	Рисунки/scr_10_eraser_pricing.png	5	4 тарифа, лимит AI 3/40/250/∞
+C03	Главная	https://mermaid.js.org	Главная страница	Обещание	Интеграции с платформами	2026-09-17	Рисунки/scr_07_mermaid_main.png	5	Нативно в GitHub/GitLab/Notion
+C03	Live Editor	🔲 URL Mermaid Live Editor	Функции	Путь до результата	Редактор, экспорт	🔲 дата просмотра	🔲 Рисунки/scr_26_mermaid_live.png	3	Результат без регистрации
+C03	Meet the Team	🔲 URL страницы команды	Отзывы/кейсы	Доверие, монетизация	Команда, спонсорство	2026-09-17	Рисунки/scr_07_mermaid_main.png	4	GitHub Sponsors
+C04	Главная	https://d2lang.com	Главная страница	Обещание	Позиционирование языка	2026-09-23	Рисунки/scr_13_d2_main.png	5	Text to diagrams
+C04	FAQ	https://d2lang.com/tour/faq/	FAQ	Условия	Лицензия, финансирование	2026-09-23	Рисунки/scr_13_d2_main.png	5	Hack Club, open source
+C04	Playground	🔲 URL D2 Playground	Функции	Демонстрация	Шаринг, экспорт	🔲 дата просмотра	🔲 Рисунки/scr_27_d2_playground.png	3	Проверка без установки
+C05	Главная	https://www.gleek.io	Главная страница	Обещание	DSL, нотации	🔲 дата просмотра	🔲 Рисунки/scr_14_gleek_main.png	3	🔲 проверить
+C05	Тарифы	🔲 URL тарифов Gleek	Тарифы	Цена	Free/Pro	🔲 дата просмотра	🔲 Рисунки/scr_15_gleek_pricing.png	2	🔲 проверить
+C05	Документация	🔲 URL документации Gleek	Документация	База знаний	Синтаксис	🔲 дата просмотра	🔲 Рисунки/scr_28_gleek_docs.png	2	🔲 проверить
+C06	Главная	https://dbdiagram.io	Главная страница	Обещание	DBML, экспорт	🔲 дата просмотра	🔲 Рисунки/scr_17_dbdiagram.png	2	🔲 проверить
+C06	Тарифы	🔲 URL тарифов dbdiagram	Тарифы	Цена	Free/Pro	🔲 дата просмотра	🔲 Рисунки/scr_29_dbdiagram_pricing.png	2	🔲 проверить
+C06	Документация DBML	🔲 URL документации DBML	Документация	База знаний	Синтаксис	🔲 дата просмотра	🔲 Рисунки/scr_30_dbml_docs.png	2	🔲 проверить
+C07	Главная	https://www.drawio.com	Главная страница	Обещание	Цена, приватность	2026-09-23	Рисунки/scr_18_drawio_main.png	5	Без регистрации и карты
+C07	Редактор	https://app.diagrams.net	Функции	Путь до результата	Библиотеки фигур UML/BPMN	2026-09-23	🔲 Рисунки/scr_31_drawio_editor.png	4	Результат за 1 шаг
+C07	Интеграции	🔲 URL раздела интеграций draw.io	Функции	Каналы	Google/Microsoft/Atlassian/GitHub	2026-09-23	Рисунки/scr_18_drawio_main.png	5	Интеграции как канал
+C08	Главная	🔲 URL Ramus	Главная страница	Обещание	Нотации IDEF/DFD	🔲 дата просмотра	🔲 Рисунки/scr_22_ramus.png	2	🔲 проверить
+C08	Загрузка / лицензия	🔲 URL Ramus	Тарифы	Условия	Educational/коммерческая	🔲 дата просмотра	🔲 Рисунки/scr_32_ramus_license.png	2	🔲 проверить
+C08	Документация	🔲 URL Ramus	Документация	База знаний	Руководство	🔲 дата просмотра	🔲 Рисунки/scr_33_ramus_docs.png	2	🔲 проверить
+C09	Главная	https://www.lucidchart.com	Главная страница	Обещание	Совместная работа, AI	🔲 дата просмотра	🔲 Рисунки/scr_20_lucidchart.png	3	🔲 проверить
+C09	Тарифы	🔲 URL тарифов Lucidchart	Тарифы	Цена	Free/платные	🔲 дата просмотра	🔲 Рисунки/scr_34_lucid_pricing.png	2	🔲 проверить
+C09	Регистрация	🔲 URL регистрации Lucidchart	Регистрация	Путь	Шаги до редактора	🔲 дата просмотра	🔲 Рисунки/scr_35_lucid_signup.png	2	🔲 проверить
+C10	Главная	https://online.visual-paradigm.com	Главная страница	Обещание	Нотации	🔲 дата просмотра	🔲 Рисунки/scr_23_vpo.png	2	🔲 проверить
+C10	Тарифы	🔲 URL тарифов VP Online	Тарифы	Цена	Free/платные	🔲 дата просмотра	🔲 Рисунки/scr_36_vpo_pricing.png	2	🔲 проверить
+C11	Главная	https://structurizr.com	Главная страница	Практика	Модель C4, виды	2026-09-17	🔲 Рисунки/scr_16_structurizr.png	4	Одна модель — много видов
+C11	Документация DSL	🔲 URL документации Structurizr DSL	Документация	Практика	Синтаксис workspace/views	🔲 дата просмотра	🔲 Рисунки/scr_37_structurizr_dsl.png	3	Эталон DSL-документации
+C12	Загрузка	https://camunda.com/download/modeler/	Лендинг товара	Практика	BPMN/DMN, платформы	2026-09-17	🔲 Рисунки/scr_21_camunda.png	4	Бесплатная загрузка
+C12	Документация	🔲 URL документации Camunda Modeler	Документация	Практика	BPMN XML, линтинг (🔲)	🔲 дата просмотра	🔲 Рисунки/scr_38_camunda_docs.png	3	🔲 проверить наличие линтера

@@ -1,0 +1,13 @@
+SHEET	01_	A7
+C01	PlantUML	https://plantuml.com	Международный, EN (RU-трафик 9,07 %)	Прямой конкурент	Разработчики, студенты	Смешанная модель	Open-source DSL-рендерер UML (онлайн-сервер, IDE, CLI)	5	Проверено	Open source без тарифов; источники дохода на сайте не раскрыты (🔲 проверить)
+C02	Eraser (DiagramGPT)	https://www.eraser.io	Международный, EN	Прямой конкурент	Команды разработки	Бесплатно + платные функции	SaaS diagram as code + AI + канвас	5	Проверено	Тарифы сняты 2026-09-17 (архив ЛР2-3)
+C03	Mermaid (open source)	https://mermaid.js.org	Международный, EN	Косвенный конкурент	Разработчики, техписатели	Смешанная модель	JS-библиотека DSL → SVG, Live Editor	4	Проверено	Донаты GitHub Sponsors; коммерческий слой — Mermaid Chart
+C04	D2	https://d2lang.com	Международный, EN	Косвенный конкурент	Разработчики	Смешанная модель	Open-source язык + CLI + playground	4	Проверено	Fiscal sponsor Hack Club
+C05	Gleek	https://www.gleek.io	Международный, EN	Косвенный конкурент	Разработчики, аналитики	Бесплатно + платные функции	SaaS с собственным DSL	3	В работе	Тарифы 🔲 проверить
+C06	dbdiagram.io	https://dbdiagram.io	Международный, EN	Заменитель	Разработчики БД, студенты	Бесплатно + платные функции	DBML → ERD, экспорт SQL	3	В работе	Все факты 🔲 проверить (допущение)
+C07	draw.io / diagrams.net	https://www.drawio.com	Международный	Заменитель	Все сегменты	Смешанная модель	Бесплатный графический редактор (web/desktop)	5	Проверено	«No account required. No credit card» (2026-09-23)
+C08	Ramus (Educational)	🔲 URL Ramus	СНГ, RU	Косвенный конкурент	Студенты методологических курсов	Корпоративная лицензия	Настольное CASE-средство IDEF0/DFD	4	В работе	Условия Educational 🔲 проверить
+C09	Lucidchart	https://www.lucidchart.com	Международный, EN	Заменитель	Аналитики, корпоративные команды	Подписка	SaaS-редактор с совместной работой и AI	3	В работе	Тарифы 🔲 проверить
+C10	Visual Paradigm Online	https://online.visual-paradigm.com	Международный, EN	Заменитель	Студенты, аналитики	Бесплатно + платные функции	SaaS-редактор UML/BPMN/ERD/DFD	3	В работе	Все факты 🔲 проверить
+C11	Structurizr	https://structurizr.com	Международный, EN	Эталон лучшей практики	Архитекторы ПО	Смешанная модель	DSL модели C4, несколько видов из одной модели	2	Проверено	Эталон: «одна модель — много представлений»
+C12	Camunda Modeler	https://camunda.com/download/modeler/	Международный, EN	Эталон лучшей практики	Процессные аналитики	Смешанная модель	Desktop-моделлер BPMN 2.0 / DMN	2	Проверено	Эталон BPMN XML и исполнимости

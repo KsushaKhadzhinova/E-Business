@@ -1,0 +1,58 @@
+SHEET	03_	A7
+C01	PlantUML		1. Базовая выгода	Получить UML-диаграмму из текста	Главная: описание текстом → изображение	plantuml.com, 2026-09-17	1	3	3	5			
+C01	PlantUML		2. Родовой товар	Open-source DSL-рендерер (PNG/SVG/ASCII), GPL-3.0	Раздел загрузки, онлайн-сервер	kursach.md	1	3	3	4			
+C01	PlantUML		3. Ожидаемый товар	Работа в браузере и локально, плагины IDE	«No server. No tokens. No tracking»	plantuml.com, 2026-09-17	1	3	2	4			
+C01	PlantUML		4. Расширенный товар	Расширение браузера для GitHub, большая база примеров	Страница расширения, примеры	архив ЛР5, 2026-09-17	1	2	2	3			
+C01	PlantUML		5. Потенциальный товар	Публичная дорожная карта	Не опубликована, развитие силами сообщества	отрицательный признак	0	0	1	2			
+C02	Eraser (DiagramGPT)		1. Базовая выгода	Архитектурные и технические диаграммы по тексту и AI	«AI for diagrams that matter»	eraser.io, 2026-09-17	1	3	3	5			
+C02	Eraser (DiagramGPT)		2. Родовой товар	SaaS: diagram as code + канвас + markdown-заметки	Главная, продукт	eraser.io	1	3	3	4			
+C02	Eraser (DiagramGPT)		3. Ожидаемый товар	Интеграции GitHub/Notion/Confluence/VS Code; история версий (90 дней → безлимит)	Тарифы и продукт	архив ЛР5, 2026-09-17	1	3	3	4			
+C02	Eraser (DiagramGPT)		4. Расширенный товар	SSO, API, командные тарифы, usage reporting	Тарифы Business/Enterprise	архив ЛР5	1	3	2	3			
+C02	Eraser (DiagramGPT)		5. Потенциальный товар	MCP-сервер для AI-агентов, синхронизация с git	Страница AI diagrams	00-competitive-analysis.md	1	2	2	4			
+C03	Mermaid (open source)		1. Базовая выгода	Диаграммы прямо в Markdown-документации	Главная	mermaid.js.org	1	3	3	5			
+C03	Mermaid (open source)		2. Родовой товар	JS-библиотека рендера (MIT)	Документация	kursach.md	1	3	3	4			
+C03	Mermaid (open source)		3. Ожидаемый товар	Нативно в GitHub/GitLab/Notion; Live Editor	Интеграции	архив ЛР5	1	3	3	4			
+C03	Mermaid (open source)		4. Расширенный товар	Командная работа и AI в Mermaid Chart (тарифы скрыты)	mermaidchart.com	архив ЛР5	1	1	1	3			
+C03	Mermaid (open source)		5. Потенциальный товар	Развитие силами сообщества, GitHub Sponsors	Meet the Team	архив ЛР5	1	2	2	2			
+C04	D2		1. Базовая выгода	Быстро перенести ментальную модель на экран	«A modern language that turns text to diagrams»	d2lang.com, 2026-09-23	1	3	3	4			
+C04	D2		2. Родовой товар	Open-source язык + CLI (MPL-2.0)	FAQ, загрузка	kursach.md	1	3	3	4			
+C04	D2		3. Ожидаемый товар	3 движка раскладки, экспорт SVG/PNG/PDF/PPTX/GIF/ASCII	Документация	архив ЛР5	1	3	3	4			
+C04	D2		4. Расширенный товар	Плагины VS Code/Vim, imports/variables, playground	Документация	архив ЛР5	1	3	2	3			
+C04	D2		5. Потенциальный товар	UML class/sequence как направление расширения	Документация	архив ЛР5	1	2	2	2			
+C05	Gleek		1. Базовая выгода	Диаграммы из текста без мыши	Главная (🔲 проверить формулировку)	kursach.md	1	2	2	4			
+C05	Gleek		2. Родовой товар	Web-SaaS с собственным DSL (freemium)	Главная	kursach.md	1	2	2	3			
+C05	Gleek		3. Ожидаемый товар	UML-подобные, ER, flowchart в веб-редакторе	Продукт	kursach.md	1	2	2	3			
+C05	Gleek		4. Расширенный товар	Платные функции Pro (🔲 проверить состав)	Тарифы	🔲	1	1	1	2			
+C05	Gleek		5. Потенциальный товар	AI-функции	Публичного подтверждения нет (🔲 проверить)	🔲	0	0	0	2			
+C06	dbdiagram.io		1. Базовая выгода	Быстро спроектировать схему БД (допущение)	Главная (🔲)	🔲	1	3	3	4			
+C06	dbdiagram.io		2. Родовой товар	Web-SaaS с DSL DBML (допущение)	Главная (🔲)	🔲	1	3	3	4			
+C06	dbdiagram.io		3. Ожидаемый товар	Экспорт SQL DDL/PNG/PDF, шаринг (🔲)	Продукт (🔲)	🔲	1	2	2	4			
+C06	dbdiagram.io		4. Расширенный товар	Командная работа, приватные диаграммы (🔲)	Тарифы (🔲)	🔲	1	2	2	3			
+C06	dbdiagram.io		5. Потенциальный товар	Генерация документации БД (🔲)	🔲	🔲	1	1	1	2			
+C07	draw.io / diagrams.net		1. Базовая выгода	Профессиональные диаграммы без корпоративной цены	Цитата с главной	drawio.com, 2026-09-23	1	3	3	5			
+C07	draw.io / diagrams.net		2. Родовой товар	Бесплатный web/desktop-редактор (Apache 2.0)	Главная	drawio.com, 2026-09-23	1	3	3	4			
+C07	draw.io / diagrams.net		3. Ожидаемый товар	Без регистрации; хранение на устройстве/Google Drive/OneDrive/GitHub	«No account required. No credit card»	drawio.com, 2026-09-23	1	3	3	5			
+C07	draw.io / diagrams.net		4. Расширенный товар	Интеграции Confluence/Jira/Teams/VS Code/Notion; фигуры UML/BPMN/AWS	Интеграции	drawio.com, 2026-09-23	1	3	3	4			
+C07	draw.io / diagrams.net		5. Потенциальный товар	Развитие без венчурных денег, совместимость файлов с 2005 г.	«Not VC-funded»	drawio.com, 2026-09-23	1	2	2	2			
+C08	Ramus (Educational)		1. Базовая выгода	Построение IDEF0/DFD-моделей для учебных задач	Методические указания вузов (🔲)	00-competitive-analysis.md	1	2	2	4			
+C08	Ramus (Educational)		2. Родовой товар	Настольное CASE-приложение	Загрузка (🔲)	01-project-concept.md	1	2	2	3			
+C08	Ramus (Educational)		3. Ожидаемый товар	Декомпозиция IDEF0, отчёты (🔲)	🔲	🔲	1	2	1	3			
+C08	Ramus (Educational)		4. Расширенный товар	Русскоязычный интерфейс, применение в курсах СНГ	🔲	00-competitive-analysis.md	1	2	2	3			
+C08	Ramus (Educational)		5. Потенциальный товар	Признаки развития продукта	Не обнаружены (устаревший UX)	отрицательный признак	0	0	1	2			
+C09	Lucidchart		1. Базовая выгода	Визуальная совместная работа над диаграммами	Главная (🔲)	00-competitive-analysis.md	1	3	3	4			
+C09	Lucidchart		2. Родовой товар	SaaS-редактор по подписке	Тарифы (🔲)	архив ЛР5	1	3	3	3			
+C09	Lucidchart		3. Ожидаемый товар	Совместное редактирование, шаблоны UML/BPMN/ERD	Продукт (🔲)	00-competitive-analysis.md	1	3	2	4			
+C09	Lucidchart		4. Расширенный товар	AI-генерация диаграммы по описанию	Продукт (🔲)	00-competitive-analysis.md	1	2	2	3			
+C09	Lucidchart		5. Потенциальный товар	Корпоративные интеграции (🔲)	🔲	🔲	1	1	1	2			
+C10	Visual Paradigm Online		1. Базовая выгода	Диаграммы UML/BPMN/ERD/DFD онлайн (🔲)	Главная (🔲)	🔲	1	2	2	4			
+C10	Visual Paradigm Online		2. Родовой товар	Web-SaaS (freemium, 🔲)	Тарифы (🔲)	🔲	1	2	2	3			
+C10	Visual Paradigm Online		3. Ожидаемый товар	Широкий набор нотаций в GUI	Продукт (🔲)	00-competitive-analysis.md	1	3	2	4			
+C10	Visual Paradigm Online		4. Расширенный товар	Шаблоны, совместная работа (🔲)	🔲	🔲	1	1	1	2			
+C10	Visual Paradigm Online		5. Потенциальный товар	Связь с desktop Visual Paradigm (🔲)	🔲	🔲	1	1	1	2			
+C11	Structurizr		1. Базовая выгода	Архитектура как код (C4)	Главная	00-competitive-analysis.md	1	3	3	4			
+C11	Structurizr		2. Родовой товар	DSL + несколько видов диаграмм из одной модели	Документация	архив ЛР5	1	3	3	4			
+C11	Structurizr		4. Расширенный товар	Workspace и views, экспорт в git-friendly формат	Документация	00-competitive-analysis.md	1	2	2	3			
+C12	Camunda Modeler		1. Базовая выгода	Моделирование процессов BPMN 2.0	Страница загрузки	00-competitive-analysis.md	1	3	3	4			
+C12	Camunda Modeler		2. Родовой товар	Бесплатный desktop-моделлер	Страница загрузки	00-competitive-analysis.md	1	3	3	3			
+C12	Camunda Modeler		4. Расширенный товар	BPMN XML, пригодный к исполнению в движке	Документация	00-competitive-analysis.md	1	3	3	4			
+C12	Camunda Modeler		5. Потенциальный товар	Исполнение процессов на платформе Camunda	Сайт платформы	00-competitive-analysis.md	1	2	2	3			
