@@ -25,8 +25,8 @@ SW = {  # Similarweb Worldwide, июнь - август 2026
 }
 BLOCK_RE = re.compile(r'(?m)^Таблица \d+ – Карточка конкурента: (\S+)\n\n(?:\|.*\n)+')
 
-SW_OLD = "🔲 ДОСНЯТЬ: Similarweb (доступ закрыт, HTTP 403 30.09.2026)"
-ADS_OLD = "🔲 ДОСНЯТЬ: Google Ads Transparency Center, LinkedIn Ad Library (не проверялись)"
+SW_OLD = "Similarweb (доступ закрыт, HTTP 403 30.09.2026)"
+ADS_OLD = "Google Ads Transparency Center, LinkedIn Ad Library (не проверялись)"
 
 
 def ads_text(dom):
@@ -50,9 +50,9 @@ def fix(m):
         if ln.startswith('| Каналы привлечения |') and dom in SW and SW_OLD in ln:
             ln = ln.replace(SW_OLD, SW[dom][1])
         if ln.startswith('| Рекламная активность |'):
-            ln = ln.replace(ADS_OLD, ads_text(dom)).replace("рекламные библиотеки 🔲 ДОСНЯТЬ", ads_text(dom))
-        if 'Capterra: 🔲 ДОСНЯТЬ' in ln:
-            ln = ln.replace('Capterra: 🔲 ДОСНЯТЬ', 'Capterra: сайт закрыт проверкой безопасности (02.10.2026)')
+            ln = ln.replace(ADS_OLD, ads_text(dom)).replace("рекламные библиотеки (данные не получены)", ads_text(dom))
+        if 'Capterra: данные не получены' in ln:
+            ln = ln.replace('Capterra: данные не получены', 'Capterra: сайт закрыт проверкой безопасности (02.10.2026)')
         out.append(ln)
     return '\n'.join(out)
 

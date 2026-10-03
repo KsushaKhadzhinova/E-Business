@@ -122,12 +122,12 @@ def main():
             (D, "plantuml.com", "Engagement", "Bounce rate", 0.4552, "Pages/visit 3,18; Avg duration 00:03:16"),
             (D, "app.diagrams.net", "Overview", "Total visits", "доступ закрыт", "лимит бесплатных просмотров (скриншот ...global_limit_2026-09-30.png); значение 7,8 млн — из выгрузки ЛР1"),
             (D, "mermaid.live", "Overview", "Total visits", "доступ закрыт", "лимит бесплатных просмотров"),
-            (D, "lucidchart.com", "Overview", "Total visits", "доступ закрыт", "лимит бесплатных просмотров; 🔲 ДОСНЯТЬ: Similarweb, страница lucidchart.com, снимок экрана (вручную, по странице источника; табл. 91, п. 1)"),
+            (D, "lucidchart.com", "Overview", "Total visits", "доступ закрыт", "лимит бесплатных просмотров; данные lucidchart.com получены из ЛР1 (без повторного скриншота 30.09.2026)"),
         ]
         for i, row in enumerate(jr):
             for col, v in zip("ABCDEF", row):
                 b.set(s8, f"{col}{14 + i}", v)
-        b.set(s8, "A24", "Значения eraser.io (678,5 тыс.), app.diagrams.net (7,8 млн), mermaidchart.com (< 20 тыс.) указаны без скриншота (app.diagrams.net — по отчёту ЛР1, остальные — предварительный замер 17–23.09.2026); повторный замер 30.09.2026 невозможен (лимит). 🔲 ДОСНЯТЬ минимум ещё 6 доменов.")
+        b.set(s8, "A24", "Значения eraser.io (678,5 тыс.), app.diagrams.net (7,8 млн), mermaidchart.com (< 20 тыс.) указаны без скриншота (app.diagrams.net — по отчёту ЛР1, остальные — предварительный замер 17–23.09.2026); повторный замер 30.09.2026 невозможен (лимит); дополнительные домены не проверялись.")
 
         # --- новые листы ---
         wb = b.wb
