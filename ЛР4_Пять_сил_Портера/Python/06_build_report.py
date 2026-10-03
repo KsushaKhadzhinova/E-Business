@@ -26,12 +26,12 @@ def sp(x):
     return f"{x:,.0f}".replace(",", " ")
 
 
-S, WI, MA = R["semrush"], R["word_index"], R["matrix_a"]
+S, WI, MA = R["sw"], R["word_index"], R["matrix_a"]
 V = {
     "SEM_N": str(S["n"]), "SEM_TOTAL": sp(S["total"]), "SEM_CR3": f1(S["cr3"] * 100) + " %", "SEM_CR5": f1(S["cr5"] * 100) + " %",
-    "SEM_HHI": sp(S["hhi"]), "SEM_SCORE": str(S["score_band"]),
-    "NM_TOTAL": sp(S["total_no_miro"]), "NM_CR3": f1(S["cr3_no_miro"] * 100) + " %", "NM_CR5": f1(S["cr5_no_miro"] * 100) + " %",
-    "NM_HHI": sp(S["hhi_no_miro"]),
+    "SEM_HHI": sp(S["hhi"]), "SEM_SCORE": str(S["score"]),
+    "NM_TOTAL": sp(S["total_nm"]), "NM_CR3": f1(S["cr3_nm"] * 100) + " %", "NM_CR5": f1(S["cr5_nm"] * 100) + " %",
+    "NM_HHI": sp(S["hhi_nm"]),
     "WI_LO": f1(WI["lo"], 2), "WI_HI": f1(WI["hi"], 2), "WI_LVL_LO": WI["level_lo"].lower(), "WI_LVL_HI": WI["level_hi"].lower(),
     "MA6": f1(MA["m6"]), "MA5": f1(MA["m5"]), "MA6L": MA["l6"].lower(), "MA5L": MA["l5"].lower(),
     "MB": " / ".join(f"{int(x)}" for x in R["matrix_b"]),

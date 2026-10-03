@@ -87,7 +87,7 @@ def fig_visits():
     """Визиты доменов с данными Semrush (август 2026) и матрицы А/Б: читает results_lr4.json (скрипт 08_word_variant.py)."""
     import json
     res = json.load(open(os.path.join(os.path.dirname(__file__), "results_lr4.json"), encoding="utf-8"))
-    top = res["semrush"]["top"]
+    top = res["sw"]["top"]
     fig, ax = plt.subplots(figsize=(8, 4.2))
     names = [t[0] for t in top][::-1]
     vals = [t[1] / 1e6 for t in top][::-1]
