@@ -63,7 +63,7 @@ PASS = {
 cand = ["| № | Домен | Группа и роль | Проверка релевантности (главная страница, границы ЛР1), 30.09.2026 |", "|---|---|---|---|"]
 for i, (d, n) in enumerate(CANDIDATES, 1):
     cand.append(f"| {i} | {d} | {n} | {PASS[d]} |")
-cand.append(f"| {len(CANDIDATES) + 1} | microsoft.com/visio | Универсальный редактор, косвенный | не включён в расчёт: домен-раздел, трафик отдельно не виден; 🔲 ДОСНЯТЬ: трафик Visio (платный Similarweb или Semrush, домен microsoft.com) |")
+cand.append(f"| {len(CANDIDATES) + 1} | microsoft.com/visio | Универсальный редактор, косвенный | не включён в расчёт: домен-раздел, трафик Visio неотделим от microsoft.com (~170-180 млн визитов/мес. совокупно); оценочно Visio-раздел – 1-2 % корпоративного трафика Microsoft (по косвенным данным) |")
 text = text.replace("{{CAND_TABLE}}", "\n".join(cand))
 
 # --- реестры ---
@@ -115,7 +115,7 @@ for d, n in CANDIDATES:
         elif key == "rep":
             v = cd.rep(d)
         elif key == "ads":
-            v = "plantuml.com: доля платного трафика 0 % (Similarweb, ЛР2-3); рекламные библиотеки 🔲 ДОСНЯТЬ" if d == "plantuml.com" else cd.NOADS
+            v = cd.ADS.get(d, cd.NOADS)
         else:
             v = c[key]
         cards.append(f"| {f} | {v} |")

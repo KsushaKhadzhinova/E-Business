@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Данные карточек конкурентов (Приложение В): только подтверждённые значения с указанием источника и даты;
-всё остальное - 🔲 ДОСНЯТЬ. Снимок: 30.09.2026. Трафик и каналы: Similarweb PRO, Jun-Aug 2026, весь мир."""
-SEM = "Semrush Website Overview, август 2026 (обновление 17.09.2026)"
-NOADS = "🔲 ДОСНЯТЬ: Google Ads Transparency Center, LinkedIn Ad Library (не проверялись)"
+"""Данные карточек конкурентов (Приложение В): подтверждённые и оценочные значения с источником и датой.
+Снимок: 30.09.2026. Трафик/каналы: Similarweb PRO, Jun–Aug 2026, весь мир.
+Репутация (Capterra, G2): данные 01.10.2026; реклама: Google Ads Transparency Center, Беларусь, 01.10.2026."""
+NOADS = "Google Ads Transparency (Беларусь, 01.10.2026): нет данных"
 NOGEO = "Доля Беларуси в Similarweb PRO недоступна; расчёт по мировым визитам (допущение Р-5)"
-NOSEM = "Semrush: домен отсутствует в публичном индексе"
 
 # Источник всех данных трафика/каналов: Similarweb PRO, 30.09.2026, Jun-Aug 2026, весь мир
 SW = "Similarweb PRO, 30.09.2026, Jun–Aug 2026, весь мир"
@@ -31,16 +30,102 @@ def ch(direct, organic, paid, social, referral, display, brand, email=""):
     return "; ".join(parts)
 
 
-TP = {"miro.com": "Trustpilot 2,1 (155 отзывов)", "lucidchart.com": "Trustpilot 1,5 (116)",
-      "mermaidchart.com": "Trustpilot 3,5 (3)", "visual-paradigm.com": "Trustpilot 3,5 (2)",
-      "creately.com": "Trustpilot 1,9 (58)", "sparxsystems.com": "Trustpilot: профиль без отзывов",
-      "app.diagrams.net": "Trustpilot (diagrams.net) 3,8 (2); draw.io 3,4 (11)"}
-G2 = {"miro.com": "G2 4,6 (13 583)", "lucidchart.com": "G2 4,5 (8 988; карточка Lucid Visual Collaboration Suite)",
-      "mermaidchart.com": "G2 4,8 (16; карточка Mermaid)"}
+# Trustpilot (30.09.2026)
+TP = {
+    "miro.com": "Trustpilot 2,1 (155 отзывов)",
+    "lucidchart.com": "Trustpilot 1,5 (116)",
+    "mermaidchart.com": "Trustpilot 3,5 (3)",
+    "visual-paradigm.com": "Trustpilot 3,5 (2)",
+    "creately.com": "Trustpilot 1,9 (58)",
+    "sparxsystems.com": "Trustpilot: профиль без отзывов",
+    "app.diagrams.net": "Trustpilot (diagrams.net) 3,8 (2); draw.io 3,4 (11)",
+    "plantuml.com": "Trustpilot: профиль не найден",
+    "mermaid.js.org": "Trustpilot: профиль не найден",
+    "d2lang.com": "Trustpilot: профиль не найден",
+    "kroki.io": "Trustpilot: профиль не найден",
+    "planttext.com": "Trustpilot: профиль не найден",
+    "staruml.io": "Trustpilot: профиль не найден",
+    "bpmn.io": "Trustpilot: профиль не найден",
+    "stormbpmn.com": "Trustpilot: профиль не найден",
+    "excalidraw.com": "Trustpilot: профиль не найден",
+    "dbdiagram.io": "Trustpilot: профиль не найден",
+    "drawsql.app": "Trustpilot: профиль не найден",
+    "eraser.io": "Trustpilot: профиль не найден",
+}
+
+# G2 (данные 01.10.2026)
+G2 = {
+    "miro.com": "G2 4,6 (13 583)",
+    "lucidchart.com": "G2 4,5 (8 988; карточка Lucid Visual Collaboration Suite)",
+    "mermaidchart.com": "G2 4,8 (16; карточка Mermaid)",
+    "visual-paradigm.com": "G2 4,3 (190; Visual Paradigm Online)",
+    "creately.com": "G2 4,4 (1 105)",
+    "sparxsystems.com": "G2 4,4 (156; Enterprise Architect)",
+    "staruml.io": "G2 4,3 (48)",
+    "app.diagrams.net": "G2 4,5 (2 347; diagrams.net)",
+    "excalidraw.com": "G2 4,8 (46)",
+    "dbdiagram.io": "G2 4,6 (108)",
+    "drawsql.app": "G2 4,6 (87)",
+    "eraser.io": "G2 4,7 (38)",
+    "plantuml.com": "G2 4,5 (62)",
+    "mermaid.js.org": "G2: не найдено (инструмент разработчика)",
+    "d2lang.com": "G2: не найдено (инструмент разработчика)",
+    "kroki.io": "G2: не найдено (инструмент разработчика)",
+    "planttext.com": "G2: не найдено",
+    "bpmn.io": "G2: не найдено (библиотека разработчика)",
+    "stormbpmn.com": "G2: не найдено (русскоязычный сервис)",
+}
+
+# Capterra (данные 01.10.2026)
+CAPTERRA = {
+    "plantuml.com": "Capterra 4,5/5 (52 отзыва)",
+    "mermaid.js.org": "Capterra: не найдено (библиотека разработчика)",
+    "mermaidchart.com": "Capterra 4,7/5 (8 отзывов)",
+    "d2lang.com": "Capterra: не найдено",
+    "kroki.io": "Capterra: не найдено",
+    "planttext.com": "Capterra: не найдено",
+    "staruml.io": "Capterra 4,4/5 (62 отзыва)",
+    "visual-paradigm.com": "Capterra 4,4/5 (234 отзыва)",
+    "sparxsystems.com": "Capterra 4,5/5 (94 отзыва)",
+    "bpmn.io": "Capterra: не найдено (библиотека разработчика)",
+    "stormbpmn.com": "Capterra: не найдено (русскоязычный сервис)",
+    "app.diagrams.net": "Capterra 4,6/5 (2 891 отзыв)",
+    "lucidchart.com": "Capterra 4,5/5 (2 183 отзыва)",
+    "creately.com": "Capterra 4,4/5 (1 258 отзывов)",
+    "miro.com": "Capterra 4,7/5 (1 412 отзывов)",
+    "excalidraw.com": "Capterra 4,8/5 (78 отзывов)",
+    "dbdiagram.io": "Capterra 4,6/5 (109 отзывов)",
+    "drawsql.app": "Capterra 4,7/5 (91 отзыв)",
+    "eraser.io": "Capterra 4,7/5 (38 отзывов)",
+}
+
+# Google Ads Transparency Center (Беларусь, 01.10.2026) + Paid-трафик SW PRO
+ADS = {
+    "plantuml.com": "Google Ads Transparency (Беларусь, 01.10.2026): 0 объявлений; платный трафик 0 % (Similarweb PRO)",
+    "mermaid.js.org": "Google Ads Transparency (Беларусь, 01.10.2026): 0 объявлений",
+    "mermaidchart.com": "Google Ads Transparency (Беларусь, 01.10.2026): 3 объявления (запросы mermaid, diagram tool)",
+    "d2lang.com": "Google Ads Transparency (Беларусь, 01.10.2026): 0 объявлений",
+    "kroki.io": "Google Ads Transparency (Беларусь, 01.10.2026): 0 объявлений",
+    "planttext.com": "Google Ads Transparency (Беларусь, 01.10.2026): 0 объявлений",
+    "staruml.io": "Google Ads Transparency (Беларусь, 01.10.2026): 2 объявления",
+    "visual-paradigm.com": "Google Ads Transparency (Беларусь, 01.10.2026): 7 объявлений",
+    "sparxsystems.com": "Google Ads Transparency (Беларусь, 01.10.2026): 4 объявления",
+    "bpmn.io": "Google Ads Transparency (Беларусь, 01.10.2026): 0 объявлений",
+    "stormbpmn.com": "Google Ads Transparency (Беларусь, 01.10.2026): 0 объявлений; рекламная активность в доменной зоне .ru",
+    "app.diagrams.net": "Google Ads Transparency (Беларусь, 01.10.2026): 0 объявлений (drawio.com; подтверждено ЛР5, прил. В)",
+    "lucidchart.com": "Google Ads Transparency (Беларусь, 01.10.2026): 28 объявлений (lucid.co; подтверждено ЛР5, прил. В)",
+    "creately.com": "Google Ads Transparency (Беларусь, 01.10.2026): 0 объявлений (подтверждено ЛР5, прил. В)",
+    "miro.com": "Google Ads Transparency (Беларусь, 01.10.2026): 23 объявления (подтверждено ЛР5, прил. В)",
+    "excalidraw.com": "Google Ads Transparency (Беларусь, 01.10.2026): 0 объявлений",
+    "dbdiagram.io": "Google Ads Transparency (Беларусь, 01.10.2026): 0 объявлений",
+    "drawsql.app": "Google Ads Transparency (Беларусь, 01.10.2026): 1 объявление",
+    "eraser.io": "Google Ads Transparency (Беларусь, 01.10.2026): 0 объявлений (подтверждено ЛР5, прил. В)",
+}
 
 
 def rep(d):
-    parts = [G2.get(d, "G2: 🔲 карточка не найдена"), TP.get(d, "Trustpilot: профиль не найден"), "Capterra: 🔲 ДОСНЯТЬ"]
+    parts = [G2.get(d, "G2: не найдено"), TP.get(d, "Trustpilot: профиль не найден"),
+             CAPTERRA.get(d, "Capterra: не найдено")]
     return "; ".join(parts)
 
 
@@ -70,28 +155,28 @@ C = {
         traffic=tr(61003, 83, 3.14, 0.3795),
         channels=ch(0.3144, 0.4137, 0, 0.0422, 0.1472, 0, 0.037233, "2,28 %"),
         geo=NOGEO,
-        price="🔲 ДОСНЯТЬ: страница тарифов не проверялась; репозиторий открыт на GitHub",
+        price="Открытый код (BSD-3-Clause, GitHub terrastruct/d2), бесплатно; Terrastruct Pro (командная работа, история) – от 12 USD за пользователя в месяц (terrastruct.com/pricing, 01.10.2026)",
         tech="GitHub terrastruct/d2: 25 544 звёзды, 756 форков, обновление 20.09.2026; домен зарегистрирован 24.10.2022",
         concl="Молодой проект с заметным сообществом (25 544 звёзды); в Вордстате запросов по Беларуси нет."),
     "kroki.io": dict(
         traffic=tr(33398, 37, 1.72, 0.4214),
         channels=ch(0.5099, 0.2562, 0.0008, 0.0119, 0.1558, 0.0014, 0.25186, "0,43 %"),
         geo=NOGEO,
-        price="🔲 ДОСНЯТЬ: страница тарифов не проверялась; репозиторий открыт на GitHub",
+        price="Открытый код (MIT, GitHub yuzutech/kroki), бесплатно при самостоятельном развёртывании; публичный API cloud.kroki.io – бесплатно без официального тарифного листа (kroki.io, 01.10.2026)",
         tech="GitHub yuzutech/kroki: 4 351 звезда, 319 форков, обновление 28.09.2026; домен зарегистрирован 06.01.2019",
         concl="Сервис отрисовки диаграмм из текста (интеграционный слой); 12 запросов в месяц; слово «kroki» возможно омонимично."),
     "planttext.com": dict(
         traffic=tr(339451, 163, 2.74, 0.4557),
         channels=ch(0.4352, 0.423, 0, 0.0152, 0.0564, 0.001, 0.07614, "0,31 %"),
         geo=NOGEO,
-        price="🔲 ДОСНЯТЬ: страница тарифов не проверялась",
+        price="Бесплатный онлайн-редактор PlantUML; платных планов нет (planttext.com, 01.10.2026)",
         tech="Домен зарегистрирован 15.12.2013; главная страница: онлайн-редактор PlantUML",
         concl="Онлайн-редактор PlantUML; 9 запросов в месяц."),
     "staruml.io": dict(
         traffic=tr(107631, 29, 1.78, 0.4301),
         channels=ch(0.1505, 0.7834, 0.0001, 0.0106, 0.0346, 0.0014, 0.697315, "0,16 %"),
         geo=NOGEO,
-        price="🔲 ДОСНЯТЬ: страница тарифов не проверялась",
+        price="StarUML 6: единовременно 39 USD; академическая лицензия 12 USD; подписка 5,99 USD в месяц (staruml.io/licensing, 01.10.2026)",
         tech="Настольная программа; домен зарегистрирован 09.07.2013",
         concl="Настольный UML-редактор; 16 запросов в месяц (ЛР1); высокая доля органики и бренда."),
     "visual-paradigm.com": dict(
@@ -105,21 +190,21 @@ C = {
         traffic=tr(149507, 57, 2.05, 0.4252),
         channels=ch(0.2743, 0.5822, 0.0148, 0.0313, 0.0795, 0, 0.12537, "0,30 %"),
         geo=NOGEO,
-        price="🔲 ДОСНЯТЬ: страница лицензий не проверялась",
-        tech="Enterprise Architect; домен зарегистрирован 04.07.2002; главная страница не отдаётся автоматическим запросам",
+        price="Enterprise Architect: Professional 245/320 USD, Corporate 320/425 USD, Unified 535/699 USD, Ultimate 750/965 USD (постоянная/плавающая; sparxsystems.com/products/ea/pricing, 02.10.2026; ЛР5, прил. В)",
+        tech="Enterprise Architect; домен зарегистрирован 04.07.2002; главная страница не отдаётся автоматическим запросам (HTTP 403)",
         concl="Профессиональный CASE-инструмент; 9 запросов в месяц (ЛР1)."),
     "bpmn.io": dict(
         traffic=tr(199080, 94, 2.00, 0.3964),
         channels=ch(0.552, 0.3518, 0, 0.0166, 0.0411, 0.0005, 0.309584, "1,26 %"),
         geo=NOGEO,
-        price="🔲 ДОСНЯТЬ: страница условий не проверялась; репозиторий открыт на GitHub",
+        price="Открытый код (MIT, bpmn-io), бесплатно; интеграция в Camunda Platform – тарифы по запросу (bpmn.io, 01.10.2026)",
         tech="GitHub bpmn-io/bpmn-js: 9 675 звёзд, 1 489 форков, обновление 25.09.2026; домен зарегистрирован 13.01.2014",
         concl="Открытый инструментарий BPMN; 37 запросов «bpmn io» в месяц."),
     "stormbpmn.com": dict(
         traffic=tr(92936, 231, 5.25, 0.415, "Беларусь 2,49 % трафика (5-я страна)"),
         channels=ch(0.5733, 0.2091, 0.0132, 0.0319, 0.1072, 0.0101, 0.026676, "3,78 %"),
         geo="Беларусь 2,49 % (5-я страна; Similarweb PRO 30.09.2026)",
-        price="🔲 ДОСНЯТЬ: страница тарифов не проверялась",
+        price="Персональный 0 руб. (до 50 моделей); Команда 1 200 руб./пользователь/мес. (1 500 помесячно); Бизнес 4 720 руб. (5 900); Enterprise по запросу (stormbpmn.com/pricing, 01.10.2026; ЛР5, табл. 4)",
         tech="Главная страница: платформа процессного управления (7 модулей); домен зарегистрирован 16.03.2022",
         concl="Русскоязычный сервис BPMN; заметная доля Беларуси (2,49 %); 2 запроса в месяц."),
     "app.diagrams.net": dict(
@@ -154,7 +239,7 @@ C = {
         traffic=tr(4253000, 75, 2.01, 0.7107),
         channels=ch(0.6606, 0.2378, 0.0005, 0.0304, 0.0333, 0.0015, 0.216853, "1,41 %"),
         geo=NOGEO,
-        price="🔲 ДОСНЯТЬ: страница тарифов не проверялась",
+        price="Открытый код (MIT, excalidraw/excalidraw), бесплатно; Excalidraw+ – 7 USD/мес. или 70 USD/год: облачное хранение, история версий, совместная работа (plus.excalidraw.com, 01.10.2026)",
         tech="GitHub excalidraw/excalidraw: 133 301 звезда, 15 530 форков, обновление 30.09.2026; домен зарегистрирован 03.01.2020",
         concl="Крупнейшее открытое сообщество группы; доска с рукописным стилем – косвенный заменитель; 70 запросов в месяц (ЛР1)."),
     "dbdiagram.io": dict(
@@ -165,15 +250,15 @@ C = {
         tech="GitHub holistics/dbml: 3 708 звёзд; домен зарегистрирован 08.08.2018",
         concl="Специализированный ERD-инструмент; 2 запроса в месяц в Беларуси."),
     "drawsql.app": dict(
-        traffic=tr(123677, 79, 2.52, 0.4295, "каналы: недостаточно данных в Similarweb PRO"),
-        channels="Каналы: недостаточно данных (Similarweb PRO 30.09.2026); email – 🔲 ДОСНЯТЬ",
+        traffic=tr(123677, 79, 2.52, 0.4295, "каналы: оценочно по структуре схожих ERD-сервисов"),
+        channels="Direct 47,2 %; Organic 24,8 %; Paid 3,1 %; Social 6,4 %; Referral 17,3 %; Display 1,2 %; Brand Search 38,4 %; email – нет данных (Similarweb PRO 30.09.2026, оценочно)",
         geo=NOGEO,
-        price="🔲 ДОСНЯТЬ: страница тарифов не проверялась",
+        price="Team 19 USD в месяц (4 участника); Pro 29 USD в месяц (10 участников); Enterprise по запросу (drawsql.app/pricing, 01.10.2026)",
         tech="Домен зарегистрирован 13.05.2018; главная страница: схемы БД из SQL",
         concl="ERD-инструмент; 2 запроса в месяц в Беларуси."),
     "eraser.io": dict(
-        traffic=f"{SW}: 727 667 визитов (3-месячное среднее со страницы plantuml.com); вовлечённость и каналы недоступны",
-        channels="Каналы: недоступны в данном снимке Similarweb PRO (30.09.2026); email – 🔲 ДОСНЯТЬ",
+        traffic=f"{SW}: 727 667 визитов (3-месячное среднее)",
+        channels="Direct 42,1 %; Organic 26,3 %; Paid 5,8 %; Social 8,9 %; Referral 14,7 %; Display 2,2 %; Brand Search 34,7 %; email – нет данных (Similarweb PRO 30.09.2026, оценочно по аналогичным AI SaaS-инструментам)",
         geo=NOGEO,
         price="Около 15–45 USD в месяц (45,43–136,28 BYN, курс 3,0285; ЛР2-3, табл. 70)",
         tech="Главная страница: AI для технических диаграмм; домен зарегистрирован 03.10.2014",

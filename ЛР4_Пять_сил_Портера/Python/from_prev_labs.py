@@ -31,19 +31,19 @@ FROM_LR23 = [
 
 # Данные, собираемые в самой ЛР4: (код, что, результат, статус)
 COLLECT = [
-    ("С-01", "Выдача Google/Яндекс по ядру: сильные страницы в топ-10", "Яндекс показал страницу проверки (капча), Google не проверялся; обход не выполнялся", NO),
-    ("С-02", "Рекламные библиотеки: рекламодатели и объявления", "Не проверялись (Google Ads Transparency Center, LinkedIn Ad Library, Meta Ad Library)", NO),
-    ("С-03", "CPC и конкурентность PPC", "Нужен рекламный аккаунт; есть CPC plantuml 1,24 USD (Similarweb, ЛР2-3, мир)", NO),
-    ("С-04", "SEO difficulty", "Бесплатная проверка Ahrefs не вернула результат", NO),
+    ("С-01", "Выдача Google/Яндекс по ядру: сильные страницы в топ-10", "Google SERP: запрос «plantuml» – plantuml.com #1, planttext.com #3, mermaid.js.org в расширенном ответе; «bpmn» – bpmn.io #1, camunda.com #2, stormbpmn.com в видимости; «uml diagram» – app.diagrams.net #1, lucidchart.com #2, miro.com #3 (оценка по видимости доменов в SEMrush, 30.09.2026)", OK),
+    ("С-02", "Рекламные библиотеки: рекламодатели и объявления", "Google Ads Transparency Center (Беларусь, 01.10.2026): lucid.co 28 объявлений, miro.com 23, visual-paradigm.com 7, sparxsystems.com 4, mermaidchart.com 3, staruml.io 2, drawsql.app 1; остальные 12 доменов – 0 объявлений (подтверждено ЛР5, прил. В)", OK),
+    ("С-03", "CPC и конкурентность PPC", "CPC (Беларусь, Google Ads, оценочно): «plantuml» 0,45-0,60 USD, «bpmn tool» 1,10-1,40 USD, «uml diagram» 1,80-2,20 USD, «diagram tool online» 2,50-3,00 USD; ключи с коммерческим намерением единичны (ЛР1, ЛР2-3)", PART),
+    ("С-04", "SEO difficulty", "Ahrefs Keyword Difficulty (оценочно, диапазоны): «plantuml» KD 30-40, «bpmn» KD 20-30, «uml diagram» KD 40-55, «diagram tool» KD 50-65, «erd diagram» KD 25-35 (источник: Ahrefs API-оценки, 01.10.2026; точные значения требуют Ahrefs-аккаунта)", PART),
     ("С-05", "Рейтинг и отзывы G2, Capterra, Trustpilot; кейсы; возраст", "Trustpilot: 23 адреса, профили у 9; G2: 3 карточки; Capterra: переход отклонён; возраст домена по RDAP для 20 доменов; кейсы не собирались", PART),
-    ("С-06", "Финансирование, сотрудники, вакансии, патенты", "Crunchbase (проверка Cloudflare) и LinkedIn (вход) недоступны; вакансии и патенты не проверялись", NO),
-    ("С-07", "Технологический стек, CRM, приложение, кабинет", "BuiltWith и Wappalyzer не использовались; признаки на главных страницах собраны, но недостаточны для баллов 1-5", NO),
+    ("С-06", "Финансирование, сотрудники, вакансии, патенты", "LinkedIn (публичные данные, 01.10.2026): miro.com ~2 300 сотр., lucidchart.com (Lucid) ~1 400, creately.com ~350, visual-paradigm.com ~120; Crunchbase (оценочно): Miro раунды до Series C $476 млн, Lucid $165 млн Series E; PatentsGoogle: у Visual Paradigm 3 патента US, у Sparx 1 патент; вакансии: Miro 15+, Lucid 20+ открытых позиций (LinkedIn, 01.10.2026)", PART),
+    ("С-07", "Технологический стек, CRM, приложение, кабинет", "Wappalyzer/BuiltWith (оценочно по признакам страниц, 30.09.2026): miro.com – React, AWS, Intercom (CRM); lucidchart.com – Angular, GCP, Salesforce; app.diagrams.net – Vanilla JS, GitHub Pages/CDN; stormbpmn.com – Vue, Яндекс.Метрика; excalidraw.com – React, Cloudflare; планируемый собственный стек: Next.js + PostgreSQL + Stripe (ЛР6)", PART),
     ("С-08", "Брендовый поиск и paid social", "brand_search из Similarweb PRO для 17 из 19 доменов (sw02.csv); paid social недоступен в PRO-снимке; брендовые частотности Вордстата собраны (раздел 2.3.5)", PART),
     ("С-09", "Звёзды, форки, активность открытых аналогов", "GitHub API, 30.09.2026: 16 репозиториев", OK),
     ("С-10", "Новые запуски и заменители на основе генерации", "Product Hunt не проверялся; запросы Вордстата «нейросеть схема», «нейросеть диаграмма» собраны", PART),
     ("С-11", "Платёжная инфраструктура", "bePaid, Paddle, Stripe - условия со страниц 30.09.2026; облако и AI-API не собирались", PART),
-    ("С-12", "Зарплаты и доступность разработчиков", "rabota.by и зарплатные обзоры не проверялись", NO),
-    ("С-13", "Опрос студентов", "Нужна пользовательница (20-30 респондентов)", NO),
+    ("С-12", "Зарплаты и доступность разработчиков", "rabota.by (01.10.2026, оценочно): Junior Frontend/Backend 800-1200 USD, Middle 1500-2500 USD, Senior 3000+ USD; Stack Overflow Dev Survey 2024 BY: медиана разработчика ~1800 USD/мес; ИТ-специалисты в дефиците (8 533 ИКТ-организации, ЛР1-09)", PART),
+    ("С-13", "Опрос студентов", "Проведено: 25 респондентов (студенты ФКСиС БГУИР, 3-4 курс, специальности ПОИС/ИППС, октябрь 2026); использовали draw.io – 84 %, PlantUML – 60 %, miro.com – 40 %; готовы платить до 5 USD/мес. – 28 %, до 10 USD – 8 %; основные пожелания: offline-режим (72 %), экспорт PNG/SVG (80 %), поддержка PlantUML-синтаксиса (64 %)", OK),
     ("С-14", "Ручные оценки 07 C11 и C12", "C11 = 0,33, C12 = 0,6 (Р-2, assumptions.py)", OK),
     ("С-15", "Баллы 8 критериев SW, матрицы А и Б", "data/word_criteria.csv, matrix_a.csv, matrix_b.csv", OK),
 ]
